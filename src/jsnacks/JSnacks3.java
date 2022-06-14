@@ -17,10 +17,9 @@ public class JSnacks3 {
 		Random ran = new Random();
 		
 		for(i = 0; i <= 2; i++) {
-			nomeCasuale = nomi[ran.nextInt(3)];
-			System.out.print(nomeCasuale + " ");
-			cognomeCasuale = cognomi[ran.nextInt(3)];
-			System.out.println(cognomeCasuale);
+			nomeCasuale = nomi[ran.nextInt(nomi.length)];
+			cognomeCasuale = cognomi[ran.nextInt(cognomi.length)];
+			System.out.println(nomeCasuale + " " + cognomeCasuale);
 		}
 		
 		
